@@ -1,1 +1,3 @@
-alert('押さないでって言ったよ！えいえい！！');
+document.querySelector('.btn1').addEventListener('click', () => {
+  alert('押しちゃった！');
+});
