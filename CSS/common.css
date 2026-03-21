@@ -2,7 +2,7 @@
     font-size: 20pt;
     font-weight: bold;
     color:#0000FF;
-    animation: fadeei 2s ease-out backwards;
+    animation: fadeei 10s ease-out backwards;
 }
 
 @keyframes fadeei {
