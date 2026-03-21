@@ -1,3 +1,5 @@
 document.querySelector('.btn1').addEventListener('click', () => {
-  alert('押しちゃった！');
+    alert('押しちゃった！');
+    document.querySelector('.btn1').removeEventListener();
+    document.querySelector('.btn1').remove();
 });
