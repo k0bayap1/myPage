@@ -1,13 +1,258 @@
 <!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <meta name="index" content="スタートページ">
-        <link rel="stylesheet" href="CSS/common.css">
-        <title>なにこれ</title>
-    </head>
-    <body>
-        <button type="button" class="btn1">絶対押さないで！！</button>
-        <script src="js/common.js"></script>
-    </body>
+<html lang="ja" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template | Developer & Designer</title>
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Portfolio<span>.</span></a>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button id="hamburger" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <span class="badge">Hello, World! I am</span>
+                <h1>Your Name</h1>
+                <p class="tagline">Full-Stack Developer & UI/UX Enthusiast building scalable web applications and intuitive digital experiences.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="code-card">
+                    <div class="card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="filename">developer.js</span>
+                    </div>
+                    <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Your Name"</span>,
+  <span class="property">role</span>: <span class="string">"Software Engineer"</span>,
+  <span class="property">skills</span>: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>, <span class="string">"TypeScript"</span>],
+  <span class="property">passion</span>: <span class="string">"Building great apps"</span>
+};</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Get to know who I am and what drives me</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Passionate problem solver crafting clean, efficient code</h3>
+                    <p>I'm a dedicated developer with a strong foundation in modern web technologies. I love turning complex problems into elegant, intuitive, and high-performance applications.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or refining UI design systems.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Completed Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="card-inner">
+                        <h4>Core Values</h4>
+                        <ul>
+                            <li><strong>Quality First:</strong> Writing maintainable, well-tested code.</li>
+                            <li><strong>User Centric:</strong> Designing frictionless experiences.</li>
+                            <li><strong>Continuous Learning:</strong> Adapting to new tools & paradigms.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="section-header">
+                <h2>Skills & Expertise</h2>
+                <p>Technologies and tools I work with daily</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>HTML5 / CSS3</span>
+                        <span>JavaScript (ES6+)</span>
+                        <span>TypeScript</span>
+                        <span>React / Next.js</span>
+                        <span>Vue.js</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>Python / FastAPI</span>
+                        <span>REST APIs</span>
+                        <span>GraphQL</span>
+                        <span>SQL / NoSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Workflow</h3>
+                    <div class="skill-tags">
+                        <span>Git / GitHub</span>
+                        <span>Docker</span>
+                        <span>Webpack / Vite</span>
+                        <span>CI/CD</span>
+                        <span>Figma</span>
+                        <span>Jest / Vitest</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Some of my recent work and open-source contributions</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img placeholder-1">
+                        <span>Project Alpha</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cloud Analytics Dashboard</h3>
+                        <p>A real-time data visualization platform for monitoring cloud server metrics and resource usage.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-link">Live Demo &rarr;</a>
+                            <a href="#" class="btn-link">GitHub &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img placeholder-2">
+                        <span>Project Beta</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Web App</h3>
+                        <p>Modern headless e-commerce store with seamless checkout flow, user authentication, and inventory management.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-link">Live Demo &rarr;</a>
+                            <a href="#" class="btn-link">GitHub &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img placeholder-3">
+                        <span>Project Gamma</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Prompt Generator</h3>
+                        <p>An AI-powered utility tool to help prompt engineers craft optimized queries for LLMs with instant templates.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>OpenAI API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-link">Live Demo &rarr;</a>
+                            <a href="#" class="btn-link">GitHub &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind or want to chat? Reach out below!</p>
+            </div>
+            <div class="contact-container">
+                <form id="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo template.');">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" required placeholder="Hello, I'd like to talk about..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+</body>
 </html>
