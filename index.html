@@ -3,22 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Template | Developer & Designer</title>
+    <title>こばやぴ Portfolio | アイドルオタク</title>
     <link rel="stylesheet" href="CSS/common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header / Navbar -->
     <header id="header">
         <div class="nav-container">
-            <a href="#hero" class="logo">Portfolio<span>.</span></a>
+            <a href="#hero" class="logo">こばやぴ<span>.</span></a>
             <nav id="nav-menu">
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Profile</a></li>
+                    <li><a href="#projects">Details</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -40,12 +40,12 @@
         <!-- Hero Section -->
         <section id="hero">
             <div class="hero-content">
-                <span class="badge">Hello, World! I am</span>
-                <h1>Your Name</h1>
-                <p class="tagline">Full-Stack Developer & UI/UX Enthusiast building scalable web applications and intuitive digital experiences.</p>
+                <span class="badge">アイドルオタク</span>
+                <h1>こばやぴ</h1>
+                <p class="tagline">好きな髪型はハーフツイン。ハーフツインこそ至高。えいか推しもう少しで900日！</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                    <a href="#about" class="btn btn-primary">プロフィールを見る</a>
+                    <a href="#contact" class="btn btn-outline">コンタクト</a>
                 </div>
             </div>
             <div class="hero-graphic">
@@ -54,13 +54,14 @@
                         <span class="dot red"></span>
                         <span class="dot yellow"></span>
                         <span class="dot green"></span>
-                        <span class="filename">developer.js</span>
+                        <span class="filename">otaku.json</span>
                     </div>
-                    <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
-  <span class="property">name</span>: <span class="string">"Your Name"</span>,
-  <span class="property">role</span>: <span class="string">"Software Engineer"</span>,
-  <span class="property">skills</span>: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>, <span class="string">"TypeScript"</span>],
-  <span class="property">passion</span>: <span class="string">"Building great apps"</span>
+                    <pre><code><span class="keyword">const</span> <span class="variable">profile</span> = {
+  <span class="property">name</span>: <span class="string">"こばやぴ"</span>,
+  <span class="property">genre</span>: <span class="string">"アイドルオタク"</span>,
+  <span class="property">hairstyle</span>: <span class="string">"ハーフツインこそ至高"</span>,
+  <span class="property">oshi</span>: <span class="string">"えいか (もうすぐ900日)"</span>,
+  <span class="property">calls</span>: [<span class="string">"転調"</span>, <span class="string">"酒"</span>, <span class="string">"ホグワーツ"</span>]
 };</code></pre>
                 </div>
             </div>
@@ -70,35 +71,35 @@
         <section id="about">
             <div class="section-header">
                 <h2>About Me</h2>
-                <p>Get to know who I am and what drives me</p>
+                <p>推しとコールとハーフツインに生きるオタク</p>
             </div>
             <div class="about-grid">
                 <div class="about-text">
-                    <h3>Passionate problem solver crafting clean, efficient code</h3>
-                    <p>I'm a dedicated developer with a strong foundation in modern web technologies. I love turning complex problems into elegant, intuitive, and high-performance applications.</p>
-                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or refining UI design systems.</p>
+                    <h3>ハーフツインこそ至高の生き様</h3>
+                    <p>日々アイドル現場に通い詰め、転調と酒とホグワーツのコールに全力を注ぐオタクライフを満喫中。推しメン（えいか）への愛は日増しに高まり、もうすぐ900日を突破！</p>
+                    <p>髪型は当然ハーフツイン推し。これ以外の選択肢はありません。</p>
                     <div class="stats-grid">
                         <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Experience</span>
+                            <span class="stat-number">900日</span>
+                            <span class="stat-label">えいか推し間近</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">25+</span>
-                            <span class="stat-label">Completed Projects</span>
+                            <span class="stat-number">3選</span>
+                            <span class="stat-label">至高のコール</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">100%</span>
-                            <span class="stat-label">Client Satisfaction</span>
+                            <span class="stat-label">ハーフツイン愛</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-card">
                     <div class="card-inner">
-                        <h4>Core Values</h4>
+                        <h4>オタクスペック</h4>
                         <ul>
-                            <li><strong>Quality First:</strong> Writing maintainable, well-tested code.</li>
-                            <li><strong>User Centric:</strong> Designing frictionless experiences.</li>
-                            <li><strong>Continuous Learning:</strong> Adapting to new tools & paradigms.</li>
+                            <li><strong>推しメン:</strong> えいか（もう少しで900日）</li>
+                            <li><strong>髪型思想:</strong> ハーフツインこそ至高</li>
+                            <li><strong>属性:</strong> アイドルオタク / 現場系</li>
                         </ul>
                     </div>
                 </div>
@@ -108,41 +109,32 @@
         <!-- Skills Section -->
         <section id="skills">
             <div class="section-header">
-                <h2>Skills & Expertise</h2>
-                <p>Technologies and tools I work with daily</p>
+                <h2>Favorite Calls</h2>
+                <p>現場で欠かせない至高のコールセレクション</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3>🎵 転調</h3>
                     <div class="skill-tags">
-                        <span>HTML5 / CSS3</span>
-                        <span>JavaScript (ES6+)</span>
-                        <span>TypeScript</span>
-                        <span>React / Next.js</span>
-                        <span>Vue.js</span>
-                        <span>Tailwind CSS</span>
+                        <span>楽曲のハイライト</span>
+                        <span>高まりの瞬間</span>
+                        <span>クラップ</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Backend</h3>
+                    <h3>🍻 酒</h3>
                     <div class="skill-tags">
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>Python / FastAPI</span>
-                        <span>REST APIs</span>
-                        <span>GraphQL</span>
-                        <span>SQL / NoSQL</span>
+                        <span>現場前の燃料</span>
+                        <span>打ち上げ必須</span>
+                        <span>乾杯</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Workflow</h3>
+                    <h3>🪄 ホグワーツ</h3>
                     <div class="skill-tags">
-                        <span>Git / GitHub</span>
-                        <span>Docker</span>
-                        <span>Webpack / Vite</span>
-                        <span>CI/CD</span>
-                        <span>Figma</span>
-                        <span>Jest / Vitest</span>
+                        <span>魔法のコール</span>
+                        <span>空間支配</span>
+                        <span>圧倒的楽しさ</span>
                     </div>
                 </div>
             </div>
@@ -151,64 +143,49 @@
         <!-- Projects Section -->
         <section id="projects">
             <div class="section-header">
-                <h2>Featured Projects</h2>
-                <p>Some of my recent work and open-source contributions</p>
+                <h2>Achievements & Style</h2>
+                <p>これまでの歩みとこだわり</p>
             </div>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-img placeholder-1">
-                        <span>Project Alpha</span>
+                        <span>えいか推し 900日</span>
                     </div>
                     <div class="project-content">
-                        <h3>Cloud Analytics Dashboard</h3>
-                        <p>A real-time data visualization platform for monitoring cloud server metrics and resource usage.</p>
+                        <h3>記念すべき推し日和</h3>
+                        <p>えいか推しになってからもう少しで900日。数々の思い出と感動を胸に現場を疾走中。</p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>Tailwind</span>
-                            <span>Chart.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-link">Live Demo &rarr;</a>
-                            <a href="#" class="btn-link">GitHub &rarr;</a>
+                            <span>記念</span>
+                            <span>愛</span>
+                            <span>継続</span>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img placeholder-2">
-                        <span>Project Beta</span>
+                        <span>ハーフツイン主義</span>
                     </div>
                     <div class="project-content">
-                        <h3>E-Commerce Web App</h3>
-                        <p>Modern headless e-commerce store with seamless checkout flow, user authentication, and inventory management.</p>
+                        <h3>ハーフツインこそ至高</h3>
+                        <p>あらゆる髪型の中で圧倒的頂点に君臨するハーフツイン。その魅力を布教する日々。</p>
                         <div class="project-tech">
-                            <span>Next.js</span>
-                            <span>Node.js</span>
-                            <span>PostgreSQL</span>
-                            <span>Stripe</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-link">Live Demo &rarr;</a>
-                            <a href="#" class="btn-link">GitHub &rarr;</a>
+                            <span>至高</span>
+                            <span>美学</span>
+                            <span>こだわり</span>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-img placeholder-3">
-                        <span>Project Gamma</span>
+                        <span>現場コール極</span>
                     </div>
                     <div class="project-content">
-                        <h3>AI Prompt Generator</h3>
-                        <p>An AI-powered utility tool to help prompt engineers craft optimized queries for LLMs with instant templates.</p>
+                        <h3>転調・酒・ホグワーツ</h3>
+                        <p>現場を最高潮に盛り上げる至高の3大要素。全身全霊で楽しむためのマストアイテム。</p>
                         <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Python</span>
-                            <span>FastAPI</span>
-                            <span>OpenAI API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-link">Live Demo &rarr;</a>
-                            <a href="#" class="btn-link">GitHub &rarr;</a>
+                            <span>転調</span>
+                            <span>酒</span>
+                            <span>ホグワーツ</span>
                         </div>
                     </div>
                 </div>
@@ -218,22 +195,22 @@
         <!-- Contact Section -->
         <section id="contact">
             <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>Have a project in mind or want to chat? Reach out below!</p>
+                <h2>Contact & SNS</h2>
+                <p>つながりはこちらから！</p>
             </div>
             <div class="contact-container">
-                <form id="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo template.');">
+                <form id="contact-form" onsubmit="event.preventDefault(); alert('メッセージありがとうございます！ハーフツインの精神を受け取りました！');">
                     <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" required placeholder="John Doe">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" required placeholder="お名前を入力">
                     </div>
                     <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" required placeholder="john@example.com">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" required placeholder="example@email.com">
                     </div>
                     <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" rows="5" required placeholder="Hello, I'd like to talk about..."></textarea>
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" rows="5" required placeholder="メッセージやコールについて語りましょう..."></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary full-width">Send Message</button>
                 </form>
@@ -244,11 +221,10 @@
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <p>&copy; 2026 Your Name. All rights reserved.</p>
+            <p>&copy; 2026 こばやぴ. All rights reserved.</p>
             <div class="social-links">
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
+                <a href="https://x.com/H170726A" target="_blank" rel="noopener">X (@H170726A)</a>
+                <a href="https://github.com/k0bayap1" target="_blank" rel="noopener">GitHub (k0bayap1)</a>
             </div>
         </div>
     </footer>
