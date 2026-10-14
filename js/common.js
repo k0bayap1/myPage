@@ -22,20 +22,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Mobile Hamburger Menu Toggle
+    // Mobile Hamburger Menu Toggle (Sidebar)
     const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
+    const sidebar = document.getElementById('sidebar');
 
-    if (hamburger && navMenu) {
+    if (hamburger && sidebar) {
         hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
+            sidebar.classList.toggle('active');
         });
 
-        // Close mobile menu when clicking a nav link
-        const navLinks = navMenu.querySelectorAll('a');
+        // Close mobile sidebar when clicking a nav link
+        const navLinks = sidebar.querySelectorAll('a');
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
+                sidebar.classList.remove('active');
             });
         });
     }
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 e.preventDefault();
-                const headerOffset = 80;
+                const headerOffset = 40;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
