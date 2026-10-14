@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Dynamic Oshi Days Calculation (Start: 2024-05-03)
+    const startDate = new Date('2024-05-03');
+    const today = new Date();
+    startDate.setHours(0, 0, 0, 0);
+    today.setHours(0, 0, 0, 0);
+    const diffTime = today - startDate;
+    const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+
+    const oshiDaysElements = document.querySelectorAll('.oshi-days-dynamic');
+    oshiDaysElements.forEach(el => {
+        el.textContent = diffDays + '日';
+    });
+
     // Theme Toggle Functionality
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;
