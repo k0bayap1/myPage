@@ -28,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (hamburger && sidebar) {
         hamburger.addEventListener('click', () => {
-            sidebar.classList.toggle('active');
+            const isActive = sidebar.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', isActive);
         });
 
         // Close mobile sidebar when clicking a nav link
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 sidebar.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
         });
     }
