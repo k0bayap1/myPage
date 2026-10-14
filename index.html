@@ -1,13 +1,255 @@
 <!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <meta name="index" content="スタートページ">
-        <link rel="stylesheet" href="CSS/common.css">
-        <title>なにこれ</title>
-    </head>
-    <body>
-        <button type="button" class="btn1">絶対押さないで！！</button>
-        <script src="js/common.js"></script>
-    </body>
+<html lang="ja" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>こばやぴ Portfolio | アイドルオタク</title>
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <a href="#hero" class="logo">こばやぴ<span>.</span></a>
+        <button id="hamburger" aria-label="モバイルメニュー" aria-expanded="false" aria-controls="sidebar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar-top">
+                <a href="#hero" class="logo">こばやぴ<span>.</span></a>
+                <span class="badge">推し活中</span>
+            </div>
+            
+            <div class="sidebar-profile">
+                <div class="avatar-ring">
+                    <div class="avatar-placeholder">小</div>
+                </div>
+                <div class="profile-info">
+                    <h3>こばやぴ</h3>
+                    <p>ハーフツイン至高オタク</p>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="サイドバーナビゲーション">
+                <ul>
+                    <li>
+                        <a href="#hero">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            Favorite Calls
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+                            Achievements
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="sidebar-actions">
+                    <button id="theme-toggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                        <span>テーマ切替</span>
+                    </button>
+                </div>
+                <div class="social-links-sidebar">
+                    <a href="https://x.com/H1570726A" target="_blank" rel="noopener">X (@H1570726A)</a>
+                    <a href="https://github.com/k0bayap1" target="_blank" rel="noopener">GitHub</a>
+                </div>
+                <p class="copyright">&copy; 2026 こばやぴ</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section id="hero" class="hero-section">
+                <div class="hero-content">
+                    <span class="badge">アイドルオタク</span>
+                    <h1>こばやぴ</h1>
+                    <p class="tagline">好きな髪型はハーフツイン。ハーフツインこそ至高。えいか推し <span class="oshi-days-dynamic">900日</span>！</p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">プロフィールを見る</a>
+                        <a href="#projects" class="btn btn-outline">こだわりを見る</a>
+                    </div>
+                </div>
+                <div class="hero-graphic">
+                    <div class="code-card">
+                        <div class="card-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="filename">otaku.json</span>
+                        </div>
+                        <pre><code><span class="keyword">const</span> <span class="variable">profile</span> = {
+  <span class="property">name</span>: <span class="string">"こばやぴ"</span>,
+  <span class="property">genre</span>: <span class="string">"アイドルオタク"</span>,
+  <span class="property">hairstyle</span>: <span class="string">"ハーフツインこそ至高"</span>,
+  <span class="property">oshi</span>: <span class="string">"えいか (<span class=\"oshi-days-dynamic\">900日</span>)"</span>,
+  <span class="property">calls</span>: [<span class="string">"転調"</span>, <span class="string">"酒"</span>, <span class="string">"ホグワーツ"</span>]
+};</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p>推しとコールとハーフツインに生きるオタク</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>ハーフツインこそ至高の生き様</h3>
+                        <p>日々アイドル現場に通い詰め、転調と酒とホグワーツのコールに全力を注ぐオタクライフを満喫中。推しメン（えいか）への愛は日増しに高まり、現在 <span class="oshi-days-dynamic">900日</span> 継続中！</p>
+                        <p>髪型は当然ハーフツイン推し。これ以外の選択肢はありません。</p>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number oshi-days-dynamic">900日</span>
+                                <span class="stat-label">えいか推し日数</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3選</span>
+                                <span class="stat-label">至高のコール</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">ハーフツイン愛</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-inner">
+                            <h4>オタクスペック</h4>
+                            <ul>
+                                <li><strong>推しメン:</strong> えいか（<span class="oshi-days-dynamic">900日</span>）</li>
+                                <li><strong>髪型思想:</strong> ハーフツインこそ至高</li>
+                                <li><strong>属性:</strong> アイドルオタク / 現場系</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="content-section">
+                <div class="section-header">
+                    <h2>Favorite Calls</h2>
+                    <p>現場で欠かせない至高のコールセレクション</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card-item">
+                        <div class="skill-icon">🎵</div>
+                        <h3>転調</h3>
+                        <p>楽曲のハイライトで訪れる最高潮の高まりとクラップの瞬間。</p>
+                        <div class="skill-tags">
+                            <span>楽曲ハイライト</span>
+                            <span>高まり</span>
+                        </div>
+                    </div>
+                    <div class="skill-card-item">
+                        <div class="skill-icon">🍻</div>
+                        <h3>酒</h3>
+                        <p>現場前の燃料であり、ライブ後の打ち上げに欠かせない至高の液体。</p>
+                        <div class="skill-tags">
+                            <span>現場前の燃料</span>
+                            <span>乾杯</span>
+                        </div>
+                    </div>
+                    <div class="skill-card-item">
+                        <div class="skill-icon">🪄</div>
+                        <h3>ホグワーツ</h3>
+                        <p>空間を完全に支配する魔法のコール。圧倒的楽しさを生み出す。</p>
+                        <div class="skill-tags">
+                            <span>魔法のコール</span>
+                            <span>空間支配</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <div class="section-header">
+                    <h2>Achievements & Style</h2>
+                    <p>これまでの歩みとこだわり</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img placeholder-1">
+                            <span>えいか推し <span class="oshi-days-dynamic">900日</span></span>
+                        </div>
+                        <div class="project-content">
+                            <h3>記念すべき推し日和</h3>
+                            <p>えいか推しになってから<span class="oshi-days-dynamic">900日</span>。数々の思い出と感動を胸に現場を疾走中。</p>
+                            <div class="project-tech">
+                                <span>記念</span>
+                                <span>愛</span>
+                                <span>継続</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img placeholder-2">
+                            <span>ハーフツイン主義</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>ハーフツインこそ至高</h3>
+                            <p>あらゆる髪型の中で圧倒的頂点に君臨するハーフツイン。その魅力を布教する日々。</p>
+                            <div class="project-tech">
+                                <span>至高</span>
+                                <span>美学</span>
+                                <span>こだわり</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img placeholder-3">
+                            <span>現場コール極</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>転調・酒・ホグワーツ</h3>
+                            <p>現場を最高潮に盛り上げる至高の3大要素。全身全霊で楽しむためのマストアイテム。</p>
+                            <div class="project-tech">
+                                <span>転調</span>
+                                <span>酒</span>
+                                <span>ホグワーツ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="main-footer">
+                <p>&copy; 2026 こばやぴ. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/common.js"></script>
+</body>
 </html>
